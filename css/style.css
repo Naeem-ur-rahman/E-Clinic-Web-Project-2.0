@@ -149,7 +149,7 @@ section {
 } */
 
 .home-content {
-     max-width: 45vw;
+     /* max-width: 45vw; */
 }
 
 span {
@@ -173,7 +173,7 @@ span {
 
 .btncontainer{
      display: flex;
-     justify-content: space-between;
+     justify-content: space-evenly;
      align-items: center;
      flex-wrap: wrap;
 }
@@ -310,7 +310,7 @@ span {
  
  @media (max-width: 710px){
      .btncontainer{
-          justify-content: center;
+          justify-content: space-between;
      }
  }
 
@@ -336,6 +336,7 @@ span {
      }
      .btncontainer{
           margin-top: 1rem;
+          justify-content: space-evenly;
      }
      .btncontainer a {
           font-size: 1.2rem;
