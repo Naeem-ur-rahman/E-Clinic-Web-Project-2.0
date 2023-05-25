@@ -65,6 +65,13 @@ section {
      align-items: center;
 }
 
+#menu-icon {
+     font-size: 3.5rem;
+     color: var(--text-color);
+     display: none;
+}
+
+
 .btns {
      display: flex;
      justify-content: center;
@@ -110,12 +117,6 @@ section {
 .login-btn:active,
 .signin-btn:active {
      scale: 0.95;
-}
-
-#menu-icon {
-     font-size: 3.5rem;
-     color: var(--text-color);
-     display: none;
 }
 
 .home {
@@ -262,15 +263,12 @@ span {
      padding: 3rem 9% 0.1rem;
 }
 
-.about h3{
+.about h3 {
      font-size: 4.3rem;
      text-align: center;
      color: var(--heading-color);
      font-family: 'Times New Roman';
      padding-bottom: 1.5rem;
-}
-.New-roman{
-     font-family: 'Times New Roman';
 }
 
 .about p {
@@ -278,7 +276,8 @@ span {
      text-align: center;
      font-weight: bold;
 }
-.about-down{
+
+.about-down {
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -344,6 +343,14 @@ span {
           font-size: 2rem;
           margin: 3rem 0;
      }
+     .btns{
+          display: block;
+     }
+     .login-btn,
+     .signin-btn {
+          text-align: center;
+          box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+     }
 
      .home {
           flex-direction: column-reverse;
@@ -395,7 +402,8 @@ span {
      .portfolio-container {
           grid-template-columns: 1fr;
      }
-     .about-down{
+
+     .about-down {
           flex-wrap: wrap;
           justify-content: center;
      }
