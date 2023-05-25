@@ -31,7 +31,6 @@ section {
      justify-content: space-between;
      align-items: center;
      z-index: 100;
-     border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 .header.sticky {
@@ -178,7 +177,7 @@ span {
      border-radius: 1rem;
      font-size: 1.6rem;
      letter-spacing: .1rem;
-     font-weight: 600;
+     font-weight: 400;
      transition: .2s ease;
      display: inline-flex;
      justify-content: center;
@@ -260,7 +259,7 @@ span {
 
 .about {
      background-color: var(--second--bg-color);
-     padding: 3rem 9% 0.1rem;
+     padding: 3rem 9% 2rem;
 }
 
 .about h3 {
@@ -283,6 +282,69 @@ span {
      align-items: center;
      margin: 4rem 0;
      gap: 2rem;
+}
+
+.about-main {
+     display: flex;
+     background-color: var(--bg-color);
+     border-radius: 3rem;
+}
+
+.about-main-content {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 2rem 0 2rem 2rem;
+}
+
+.about-main-content h3 img {
+     height: 3.5rem;
+}
+
+.about-main-content h3 {
+     text-align: left;
+     font-size: 4rem;
+}
+
+.about-main-content p {
+     text-align: left;
+     font-weight: 600;
+     font-size: 1.5rem;
+}
+
+.about-main-content ul {
+     padding: 1rem 0;
+     list-style-type: none;
+     font-size: 1.7rem;
+     color: var(--heading-color);
+     font-weight: 500;
+}
+
+.about-main-content ul li img {
+     height: 3rem;
+}
+
+.about-main-content ul li {
+     display: flex;
+     align-items: center;
+     gap: 2rem;
+     padding: .5rem 0;
+}
+
+.learnbtn {
+     background-color: var(--main-color);
+     color: var(--second--bg-color);
+     width: fit-content;
+}
+
+.about-main-img {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.about-main-img img {
+     width: 40vw;
 }
 
 @media (max-width: 1200px) {
@@ -343,9 +405,11 @@ span {
           font-size: 2rem;
           margin: 3rem 0;
      }
-     .btns{
+
+     .btns {
           display: block;
      }
+
      .login-btn,
      .signin-btn {
           text-align: center;
@@ -370,13 +434,13 @@ span {
           margin-top: 4rem;
      }
 
-     .about {
-          flex-direction: column-reverse;
+     .about-main {
+          flex-direction: column;
      }
 
-     .about img {
-          width: 70vw;
-          margin-top: 4rem;
+     .about-main-img img {
+          width: 50vw;
+          margin: 4rem 0;
      }
 
      .services h2 {
