@@ -297,7 +297,7 @@ span {
      display: flex;
      flex-direction: column;
      justify-content: center;
-     padding: 2rem 0 2rem 2rem;
+     padding: 2rem 2rem 2rem 2rem;
 }
 
 .about-main-content h3 img {
@@ -305,13 +305,16 @@ span {
 }
 
 .about-main-content h3,
-.doctor-consultant-content h3 {
+.doctor-consultant-content h3,
+.services h3 {
      text-align: left;
      font-size: 4rem;
+     color: var(--heading-color);
 }
 
 .about-main-content p,
-.doctor-consultant-content p {
+.doctor-consultant-content p,
+.services p {
      text-align: left;
      font-weight: 600;
      font-size: 1.5rem;
@@ -365,6 +368,52 @@ span {
      background-color: var(--second--bg-color);
 }
 
+.services p {
+     margin-bottom: 4rem;
+}
+
+.services-container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     align-items: center;
+     justify-content: center;
+     gap: 2.5rem;
+}
+
+.services-box {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: var(--second--bg-color);
+     padding: 3rem;
+     border-radius: 3rem;
+     transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.services-box:hover {
+     transform: scale(1.05);
+     cursor: pointer;
+}
+
+.services-box h3 {
+     font-size: 2.3rem;
+     margin-bottom: 10px;
+}
+
+.services-box p {
+     text-align: center;
+}
+
+.services-box img {
+     width: 100px;
+     margin-bottom: 20px;
+     box-shadow: 0px 10px 20px 1px var(--bg-color);
+}
+
+.find-doctor{
+     background-color: var(--second--bg-color);
+}
 
 @media (max-width: 1200px) {
      html {
@@ -475,7 +524,7 @@ span {
           margin-bottom: 3rem;
      }
 
-     .portfolio-container {
+     .services-container {
           grid-template-columns: repeat(2, 1fr);
      }
 }
@@ -487,8 +536,21 @@ span {
 }
 
 @media (max-width:617px) {
-     .portfolio-container {
+     .services-container {
           grid-template-columns: 1fr;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .services {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .services-box {
+          max-width: 300px;
+          max-height: 300px;
      }
 
      .about-down {
@@ -500,6 +562,11 @@ span {
 @media (max-width:450px) {
      html {
           font-size: 45%;
+     }
+
+     .about-main-content,
+     .doctor-consultant-content {
+          padding: 2rem 1rem;
      }
 
      .contact form .input-box input {
