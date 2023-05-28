@@ -18,6 +18,7 @@ body {
 
 section {
      padding: 10rem 9% 2rem;
+     min-height: 100vh;
 }
 
 .header {
@@ -259,10 +260,11 @@ span {
 
 .about {
      background-color: var(--second--bg-color);
-     padding: 3rem 9% 2rem;
+     padding: 10rem 9% 2rem;
 }
 
-.about h3 {
+.about h3,
+.doctor-consultant h3 {
      font-size: 4.3rem;
      text-align: center;
      color: var(--heading-color);
@@ -290,7 +292,8 @@ span {
      border-radius: 3rem;
 }
 
-.about-main-content {
+.about-main-content,
+.doctor-consultant-content {
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -301,18 +304,21 @@ span {
      height: 3.5rem;
 }
 
-.about-main-content h3 {
+.about-main-content h3,
+.doctor-consultant-content h3 {
      text-align: left;
      font-size: 4rem;
 }
 
-.about-main-content p {
+.about-main-content p,
+.doctor-consultant-content p {
      text-align: left;
      font-weight: 600;
      font-size: 1.5rem;
 }
 
-.about-main-content ul {
+.about-main-content ul,
+.doctor-consultant-content ul {
      padding: 1rem 0;
      list-style-type: none;
      font-size: 1.7rem;
@@ -320,32 +326,45 @@ span {
      font-weight: 500;
 }
 
-.about-main-content ul li img {
+.about-main-content ul li img,
+.doctor-consultant-content ul li img {
      height: 3rem;
 }
 
-.about-main-content ul li {
+.about-main-content ul li,
+.doctor-consultant-content ul li {
      display: flex;
      align-items: center;
      gap: 2rem;
      padding: .5rem 0;
 }
 
-.learnbtn {
+.learnbtn,
+.bookconsultant {
      background-color: var(--main-color);
      color: var(--second--bg-color);
      width: fit-content;
 }
 
-.about-main-img {
+.about-main-img,
+.doctor-consultant-img {
      display: flex;
      align-items: center;
      justify-content: center;
 }
 
-.about-main-img img {
+.about-main-img img,
+.doctor-consultant-img img {
      width: 40vw;
 }
+
+.doctor-consultant {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: var(--second--bg-color);
+}
+
 
 @media (max-width: 1200px) {
      html {
@@ -379,7 +398,7 @@ span {
      }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 799px) {
      #menu-icon {
           display: block;
      }
@@ -438,7 +457,12 @@ span {
           flex-direction: column;
      }
 
-     .about-main-img img {
+     .doctor-consultant {
+          flex-direction: column-reverse;
+     }
+
+     .about-main-img img,
+     .doctor-consultant-img img {
           width: 50vw;
           margin: 4rem 0;
      }
