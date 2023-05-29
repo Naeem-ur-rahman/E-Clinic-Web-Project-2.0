@@ -306,7 +306,8 @@ span {
 
 .about-main-content h3,
 .doctor-consultant-content h3,
-.services h3 {
+.services h3,
+.find-doctor h3 {
      text-align: left;
      font-size: 4rem;
      color: var(--heading-color);
@@ -314,7 +315,8 @@ span {
 
 .about-main-content p,
 .doctor-consultant-content p,
-.services p {
+.services p,
+.find-doctor p {
      text-align: left;
      font-weight: 600;
      font-size: 1.5rem;
@@ -411,8 +413,90 @@ span {
      box-shadow: 0px 10px 20px 1px var(--bg-color);
 }
 
-.find-doctor{
+.find-doctor {
      background-color: var(--second--bg-color);
+}
+
+.find-doctor form {
+     background-color: rgb(242, 243, 243);
+     border-radius: 2rem;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 0 1rem;
+}
+
+.find-doctor form input:nth-child(1),
+.find-doctor form input:nth-child(2),
+.find-doctor form input:nth-child(3) {
+     background-color: rgb(242, 243, 243);
+     color: var(--main-color);
+     text-align: center;
+     font-size: 1.5rem;
+     font-weight: 600;
+}
+
+.find-doctor form input:nth-child(2),
+.find-doctor form input:nth-child(3) {
+     border-left: 2px solid var(--main-color);
+}
+
+.search-btn {
+     background-color: var(--main-color);
+     color: var(--second--bg-color);
+     margin: 0.5rem 0;
+}
+
+.doctor-box {
+     background-color: rgb(242, 243, 243);
+     border-radius: 1rem;
+     transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+     margin: 1rem;
+}
+
+.doctor-box:hover {
+     transform: scale(1.05);
+     cursor: pointer;
+}
+
+.doctor-box-img img {
+     width: 100%;
+     height: 60%;
+     border-radius: inherit;
+}
+
+.doctor-box-content {
+     padding: .5rem 1rem .5rem;
+}
+
+.doctor-box-content div {
+     display: flex;
+     justify-content: space-between;
+}
+
+.doctor-box-content div p {
+     display: flex;
+     font-size: 1.3rem;
+     font-weight: 400;
+}
+
+.doctor-box-content h3 {
+     font-size: 2.5rem;
+}
+
+.doctor-box-content .view-btn {
+     border: 1px solid rgb(108, 108, 248);
+     color: rgb(108, 108, 248);
+     background-color: rgb(242, 243, 243);
+     cursor: pointer;
+     border-radius: .5rem;
+     padding: 0.1rem 1rem;
+     transition: .1s ease-in;
+}
+
+.doctor-box-content .view-btn:hover {
+     background-color: rgb(108, 108, 248);
+     color: rgb(242, 243, 243);
 }
 
 @media (max-width: 1200px) {
@@ -556,6 +640,27 @@ span {
      .about-down {
           flex-wrap: wrap;
           justify-content: center;
+     }
+
+     .find-doctor form {
+          flex-direction: column;
+          align-items: normal;
+     }
+
+     .find-doctor form input:nth-child(1),
+     .find-doctor form input:nth-child(2),
+     .find-doctor form input:nth-child(3) {
+          border: none;
+          height: 5rem;
+     }
+
+     .find-doctor form input:nth-child(1),
+     .find-doctor form input:nth-child(2) {
+          border-bottom: 1px solid var(--main-color);
+     }
+
+     .search-btn {
+          margin-bottom: 1rem;
      }
 }
 
