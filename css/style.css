@@ -499,6 +499,73 @@ span {
      color: rgb(242, 243, 243);
 }
 
+.getapp {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: var(--second--bg-color);
+}
+
+.getapp-content h3 {
+     font-family: 'Times New Roman';
+     font-size: 4.4rem;
+     color: var(--heading-color);
+}
+
+.getapp-content ul {
+     list-style-type: disc;
+     padding: 1.8rem;
+}
+
+.getapp-content li,
+.getapp-content p {
+     font-weight: bolder;
+     font-size: 1.3rem;
+}
+
+#appstorebtn {
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+     align-items: center;
+     background-color: var(--heading-color);
+     color: var(--second--bg-color);
+     font-family: monospace;
+     font-weight: 400;
+     /* max-width: 40%; */
+     text-align: center;
+     font-size: 1rem;
+}
+
+#playstorebtn {
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+     align-items: center;
+     background-color: rgb(242, 243, 243);
+     color: var(--heading-color);
+     /* max-width: 40%; */
+     text-align: center;
+}
+
+#appstorebtn img,
+#playstorebtn img {
+     height: 3rem;
+}
+
+#appstorebtn p,
+#playstorebtn p {
+     font-size: 1rem;
+     font-weight: 500;
+     font-family: monospace;
+}
+
+.getapp-img img {
+     width: 40vw;
+}
+
+
+
 @media (max-width: 1200px) {
      html {
           font-size: 50%;
@@ -518,12 +585,12 @@ span {
           padding-bottom: 7rem;
      }
 
-     .portfolio {
+     .find-doctor {
           padding-bottom: 7rem;
      }
 
-     .contact {
-          min-height: auto;
+     .getapp {
+          padding-bottom: 7rem;
      }
 
      .footer {
@@ -594,6 +661,11 @@ span {
           flex-direction: column-reverse;
      }
 
+     .getapp {
+          flex-direction: column;
+          gap: 3rem;
+     }
+
      .about-main-img img,
      .doctor-consultant-img img {
           width: 50vw;
@@ -604,7 +676,7 @@ span {
           margin-bottom: 3rem;
      }
 
-     .portfolio h2 {
+     .find-doctor h2 {
           margin-bottom: 3rem;
      }
 
@@ -693,7 +765,20 @@ span {
           font-size: 1.2rem;
      }
 
-     .about-img img {
+     .getapp .btncontainer {
+          flex-direction: column;
+     }
+
+     #appstorebtn,
+     #playstorebtn {
+          width: 60vw;
+     }
+
+     .getapp-img img {
+          width: 85vw;
+     }
+
+     .doctor-consultant-img img {
           width: 85vw;
      }
 
